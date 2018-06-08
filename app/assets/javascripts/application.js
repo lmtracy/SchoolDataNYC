@@ -13,4 +13,18 @@
 //= require rails-ujs
 //= require activestorage
 //= require turbolinks
+//= require jsmaps-libs
+//= require jsmaps-panzoom
+//= require jsmaps
+//= require jsmaps.min
+//= require newYorkCityBoroughs
 //= require_tree .
+
+
+$(function() {
+      
+    $('#newYorkCityBoroughs-map').JSMaps({
+      map: 'newYorkCityBoroughs'
+    });
+
+  });

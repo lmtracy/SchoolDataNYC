@@ -6,10 +6,14 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag    'https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css' %>
+    <%= javascript_include_tag 'https://code.jquery.com/jquery-3.2.1.slim.min.js' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
   </head>
 
   <body>
     <%= yield %>
+
   </body>
 </html>
