@@ -3,7 +3,7 @@
   margin: 0 auto;
   /* console */ }
   .jsmaps-wrapper .jsmaps-preloader {
-    position: absolute;
+    position: relative;
     top: 50%;
     left: 50%;
     z-index: 999;
@@ -15,11 +15,11 @@
     color: #fff;
     padding: 16px 14px; }
   .jsmaps-wrapper .jsmaps {
-    position: absolute;
+    position: relative;
     left: 0;
     top: 0; }
   .jsmaps-wrapper .jsmaps-text {
-    float: left;
+    /* float: right; */
     overflow: auto;
     padding: 10px 20px;
     clear: both; }

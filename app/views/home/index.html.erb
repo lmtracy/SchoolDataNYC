@@ -1,10 +1,48 @@
-<h1>Home</h1>
+<section id="homepage">
+    <div class="txtBox">
+    <p>New York City ranks #39 in the country in high school graduation rates. 
+    Lack of funding and resources are key factors in how schools and students perform. 
+    Learn about how you can help today.</p>
+    <i class="fas fa-chevron-down"></i>
+    </div>
+    <%= image_tag 'skyline.png', class: 'skyline' %>
+</section>
+
+<section id="help">
+    <h2>How to Help</h2>
 
 
+<div class="card-deck">
+  <div class="card bg-light">
+    <i class="fas fa-tv fa-10x"></i>
+    <div class="card-body">
+      <h5 class="card-title">Donate Old Supplies</h5>
+      <p class="card-text">Underfunded NYC schools are in need of your old, working supplies such as laptops, computers, phones, cameras, etc. 
+      You can contact a local school to find out what they specifically need. </p>
+    </div>
+  </div>
+  <div class="card bg-light">
+    <i class="fas fa-chalkboard-teacher fa-10x"></i>
+    <div class="card-body">
+      <h5 class="card-title">Volunteer Teaching</h5>
+      <p class="card-text">Ever wanted to teach? NYC schools are looking for volunteers to teach a subject. Contact a local school to learn more.</p>
+    </div>
+  </div>
+  <div class="card bg-light">
+  <i class="fas fa-hand-holding-usd fa-10x"></i>
+    <div class="card-body">
+      <h5 class="card-title">Give Money</h5>
+      <p class="card-text">If you don't have time to volunteer or supplies to donate, consider a monetary donation. Contact a local school to find out more!</p>
+    </div>
+  </div>
+</div>
+
+</section>
 
 
-
+<%# Jquery is needed for this map to work. Don't judge me, Orlando %>
+<section id="map">
+    <h2>Find schools with low graduation rates by borough</h2>
     <div class="jsmaps-wrapper" id="newYorkCityBoroughs-map"></div>
-
-
-
+</section>
+ 

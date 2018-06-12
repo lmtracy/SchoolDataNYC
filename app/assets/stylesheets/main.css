@@ -1,21 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
+  margin: 0px;
+  padding: 0px;
+  height: 1400px;
+}
 
-  body {
-    font-family: 'Droid Sans', sans-serif;
-    background:#f2f2f2;
-    font-size: 14px;
-    line-height: 21px;
-  }
-
-  .container {
-    width: 960px;
-    margin: 20px auto;
-  }
+body {
+  font-family: 'Open Sans', sans-serif;
+  background:#f2f2f2;
+}
 
   @media only screen and (min-width: 768px) and (max-width: 1000px) {
     .container {
@@ -37,13 +31,68 @@ html {
     border:none;
   }
 
-  h1, h2, h3, h4, h5, h6{ 
-    font-weight:normal; 
+#homepage {
+  min-height: 700px;
+  /* background-image: url('nyc.jpg'); */
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover; */
+}
+
+#homepage img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: -20px;
   }
-  h1{ 
-    font-size:26px; 
-    line-height:32px; 
+  
+
+.txtBox {
+  position: absolute;
+  text-align: center;
+  margin-left: 20%;
+  top: 200px;
+  height: auto;
+  width: 60%;
+  background-color: rgba(212, 212, 212, 0.8);
+  padding: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  z-index: 1;
+}
+
+#map {
+  text-align: center;
+  margin: 20px;
+  height: 600px;
+}
+
+.boroData {
+  font-family: 'Open Sans', sans-serif;
+  width: 700px;
+  margin: 20px;
+  line-height: 20px;
+  padding-top: 100px;
   }
-  p, ul{
-    margin-bottom:10px;
-  }
+
+.schoolHdr {
+  font-size: 20px;
+}
+
+.logoImg {
+  width: 200px;
+}
+
+#help {
+  min-height: 700px;
+  background-color: #327ac4;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.card {
+  padding-top: 20px;
+  background-color: dimgrey;
+}

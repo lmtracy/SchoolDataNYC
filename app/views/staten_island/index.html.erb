@@ -1,0 +1,17 @@
+<div class="boroData">
+<% @data['schools'].each do | school |%>
+    <% if school['boro'] == "R" %>
+    <p class="schoolHdr"><%= school['school_name'] %></p>
+    <ul>
+    <li>Address: <%= school['location'] %> </li>
+    <li>Number of Students: <%= school['total_students'] %> </li>
+    <li>Graduation Rate: <%= school['graduation_rate'] %> </li>
+    <li>Website: <%= school['website'] %> </li>
+    <li>Email: <%= school['school_email'] %> </li>
+    <li>Phone: <%= school['phone_number'] %> </li>
+    </ul>
+      <hr/>
+    <% end %>
+<% end %>
+</div>
+    

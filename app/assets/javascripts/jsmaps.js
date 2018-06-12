@@ -99,10 +99,10 @@
       'displayAbbreviations': true,
       'displayAbbreviationOnDisabledStates': false,
       'autoPositionAbbreviations': false,
-      'stateClickAction': 'text',
-      'textPosition': 'right',
+      'stateClickAction': 'url',
+      'textPosition': 'bottom',
       'hrefTarget': '_blank',
-      'textAreaWidth': 300,
+      'textAreaWidth': 100,
       'textAreaHeight': 300,
       'pinSize': 10,
       'displayMousePosition': false,
@@ -203,7 +203,7 @@
     }
 
     function resetScrollBar() {
-      if (config.stateClickAction === 'text') {
+      if (config.stateClickAction === 'url') {
         var t = textArea[0];
         t.scrollLeft = 0;
         t.scrollTop = 0;
@@ -248,10 +248,10 @@
       /////////////////////////////
 
       //Set initial default text
-      if (config.stateClickAction === 'text') {
+      if (config.stateClickAction === 'url') {
         // Create text div
-        textArea = $('<div class="jsmaps-text"></div>').appendTo(mapWrapper);
-        textArea.html(config.defaultText);
+        // textArea = $('<div class="jsmaps-text"></div>').appendTo(mapWrapper);
+        // textArea.html(config.defaultText);
         // Handle text left
         if (config.textPosition === 'left') {
           map.css({
@@ -443,7 +443,7 @@
 
               current = target;
               
-              if (config.stateClickAction === 'text') {
+              if (config.stateClickAction === 'url') {
                 textArea.html(target.text);
               } else if (config.stateClickAction === 'url') {
                 window.open(target.url, config.hrefTarget);
@@ -567,7 +567,7 @@
             animatePaths(pinsAr, [id], target.selectedColor);
             current = target;
 
-            if (config.stateClickAction === 'text') {
+            if (config.stateClickAction === 'url') {
               textArea.html(target.text);
             } else if (config.stateClickAction === 'url') {
               window.open(target.url, config.hrefTarget);
@@ -592,7 +592,7 @@
         containerWidth = mapWrapper.parent().width();
         winWidth = win.width();
 
-        if (config.stateClickAction === 'text') {
+        if (config.stateClickAction === 'url') {
 
           //Force text to bottom on mobile
           textPosition = winWidth >= 767 ? config.textPosition : 'bottom';
@@ -880,7 +880,7 @@
         var pathIds = current.groupIds || [current.id];
         animatePaths(isPin ? pinsAr : pathsAr, pathIds, current.color);
         //reset initial default text
-        if (config.stateClickAction === 'text') {
+        if (config.stateClickAction === 'url') {
           textArea.html(config.defaultText);
         }
         current = null;

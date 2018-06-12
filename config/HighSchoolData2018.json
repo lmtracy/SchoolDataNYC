@@ -1,4 +1,5 @@
-[
+{
+"schools": [
   {
     "dbn": "05M367",
     "school_name": "Academy for Social Action",
@@ -6561,3 +6562,4 @@
     "pct_stu_safe": 0.94
   }
 ]
+}

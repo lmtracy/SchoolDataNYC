@@ -1,10 +1,15 @@
-<% @data.each do | data |%>
+
+
+<% @data['schools'].each do | school |%>
+    <% if school['boro'] == "M" %>
     <ul>
-    <li>School Name: <%= data['school_name'] %> </li>
-    <li>Address: <%= data['location'] %> </li>
-    <li>Email: <%= data['school_email'] %> </li>
-    <li>Phone: <%= data['phone_number'] %> </li>
+    <li><%= school['boro'] %> </li>
+    <li>Address: <%= school['location'] %> </li>
+    <li>Email: <%= school['school_email'] %> </li>
+    <li>Phone: <%= school['phone_number'] %> </li>
     </ul>
       <hr/>
 <% end %>
+<% end %>
+
     
