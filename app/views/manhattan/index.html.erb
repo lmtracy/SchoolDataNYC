@@ -1,19 +1,23 @@
-<h1>Underperforming Manhattan Schools</h1>
-
+<div id="manhattan">
 <div class="boroData">
+<h1>Underperforming Manhattan Schools</h1>
+<h5>Schools with graduation rates less than the national average (84%)</h5>
+<p></p>
 <% @data['schools'].each do | school |%>
     <% if school['boro'] == "M" %>
     <p class="schoolHdr"><%= school['school_name'] %></p>
     <ul>
-    <li>Address: <%= school['location'] %> </li>
-    <li>Number of Students: <%= school['total_students'] %> </li>
-    <li>Graduation Rate: <%= school['graduation_rate'] %> </li>
-    <li>Website: <%= school['website'] %> </li>
-    <li>Email: <%= school['school_email'] %> </li>
-    <li>Phone: <%= school['phone_number'] %> </li>
+    <li><strong>Address:</strong> <%= school['location'] %> </li>
+    <li><strong>Neighborhood:</strong> <%= school['neighborhood'] %> </li>
+    <li><strong>Number of Students:</strong> <%= school['total_students'] %> </li>
+    <li><strong>Attendance Rate:</strong> <%= school['attendance_rate'] %> </li>
+    <li><strong>Graduation Rate:</strong> <%= school['graduation_rate'] %> </li>
+    <li><strong>Website:</strong> <%= school['website'] %> </li>
+    <li><strong>Email:</strong> <%= school['school_email'] %> </li>
+    <li><strong>Phone:</strong> <%= school['phone_number'] %> </li>
     </ul>
       <hr/>
     <% end %>
 <% end %>
 </div>
-    
+</div>

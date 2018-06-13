@@ -33,11 +33,6 @@ body {
 
 #homepage {
   min-height: 700px;
-  /* background-image: url('nyc.jpg'); */
-  /* background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover; */
 }
 
 #homepage img {
@@ -95,4 +90,44 @@ body {
 .card {
   padding-top: 20px;
   background-color: dimgrey;
+}
+
+#bronx {
+  background-image: url('nycmap-bronx.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+#manhattan {
+  background-image: url('nycmap-man.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+#queens {
+  background-image: url('nycmap-queens.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+#brooklyn {
+  background-image: url('nycmap-brooklyn.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
+}
+
+#si {
+  background-image: url('nycmap-si.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: auto;
 }
